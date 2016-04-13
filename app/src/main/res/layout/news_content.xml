@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--  这里我们充分发挥了代码的复用性，
+    直接在布局中引入了 NewsContentFragment，这样
+也就相当于把 news_content_frag 布局的内容自动加了进来。-->
+    <fragment
+        android:id="@+id/news_content_fragment"
+        android:name="com.example.mingming.fragmentbestpractice.NewsContentFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
